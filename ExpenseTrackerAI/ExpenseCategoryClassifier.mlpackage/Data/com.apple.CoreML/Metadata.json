@@ -1,0 +1,13 @@
+{
+  "MLModelDescriptionKey" : "For ExpenseTrackerAI",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.coreml.model.preview.type" : "tabularClassifier",
+    "com.apple.createml.training.started" : "2025-09-20T13:19:52Z",
+    "com.apple.createml.version" : "15.6.1",
+    "com.apple.createml.training.finished" : "2025-09-20T13:19:52Z",
+    "com.apple.createml.app.tag" : "151.2",
+    "com.apple.createml.model.created" : "2025-09-20T13:19:52Z",
+    "com.apple.createml.app.version" : "6.2"
+  },
+  "MLModelAuthorKey" : "Dhruv Chhatbar"
+}

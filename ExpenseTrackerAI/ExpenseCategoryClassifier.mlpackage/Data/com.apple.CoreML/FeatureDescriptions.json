@@ -1,0 +1,24 @@
+{
+  "Inputs" : {
+    "amount" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "title" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "Outputs" : {
+    "categoryProbability" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "category" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "TrainingInputs" : {
+
+  },
+  "States" : {
+
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "4ECB78FB-C849-4208-9A2C-0BCFA7988B78": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "B4660FE0-0770-4104-93C9-252837A38F4D": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "ExpenseCategoryClassifier.mlmodel",
+            "path": "com.apple.CoreML/ExpenseCategoryClassifier.mlmodel"
+        },
+        "D267F01D-709A-4080-8EFB-404F4B65F8C0": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "B4660FE0-0770-4104-93C9-252837A38F4D"
+}
