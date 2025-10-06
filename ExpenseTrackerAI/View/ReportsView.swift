@@ -10,7 +10,6 @@ import Charts
 
 struct ExpenseChartView: View {
     let monthlyData: [(month: String, total: Double)]
-    
     var body: some View {
         Chart {
             ForEach(monthlyData, id: \.month) { data in
