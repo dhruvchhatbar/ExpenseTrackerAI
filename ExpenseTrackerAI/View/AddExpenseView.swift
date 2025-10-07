@@ -5,20 +5,6 @@
 //  Created by Dhruv Chhatbar on 20/09/25.
 //
 
-//
-//  AddExpenseView.swift
-//  ExpenseTrackerAI
-//
-//  Created by Dhruv Chhatbar on 20/09/25.
-//
-
-//
-//  AddExpenseView.swift
-//  ExpenseTrackerAI
-//
-//  Created by Dhruv Chhatbar on 20/09/25.
-//
-
 import SwiftUI
 
 struct AddExpenseView: View {
