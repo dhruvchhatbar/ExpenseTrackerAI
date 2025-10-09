@@ -11,6 +11,7 @@ struct ExpensesListView: View {
     @StateObject private var vm = ExpenseTrackerViewModel()
     @State private var showingAdd = false
     @State private var showCharts = false
+    @State private var showingAuthAlert = false
 
     var body: some View {
         NavigationView {
@@ -131,13 +132,41 @@ struct ExpensesListView: View {
                     }
                     .padding(.top)
                 }
+                .refreshable {
+                    vm.refreshExpenses()
+                }
             }
             .navigationTitle("Expense Tracker")
             .toolbar {
-                Button(action: { showingAdd = true }) {
-                    Image(systemName: "plus.circle.fill")
-                        .font(.title2)
-                        .foregroundColor(Color.orange)
+                HStack {
+                    // User ID display
+                    // if let userId = vm.currentUserId {
+                    //     Text("Device: \(String(userId.suffix(8)))")
+                    //         .font(.caption)
+                    //         .foregroundColor(.white)
+                    //         .padding(.horizontal, 8)
+                    //         .padding(.vertical, 4)
+                    //         .background(Color.black.opacity(0.3))
+                    //         .cornerRadius(8)
+                    // }
+                    
+                    Button(action: { 
+                        if vm.isUserSignedIn() {
+                            showingAdd = true 
+                        } else {
+                            vm.createNewUser()
+                        }
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.title2)
+                            .foregroundColor(Color.orange)
+                    }
+                    
+                    // Button(action: { vm.switchUser() }) {
+                    //     Image(systemName: "person.circle.fill")
+                    //         .font(.title2)
+                    //         .foregroundColor(Color.blue)
+                    // }
                 }
             }
             .sheet(isPresented: $showingAdd) {
@@ -145,6 +174,12 @@ struct ExpensesListView: View {
             }
             .sheet(isPresented: $showCharts) {
                 ExpenseChartsView(vm: vm)
+            }
+            .onAppear {
+                // Automatically create a device user if not already created
+                if !vm.isUserSignedIn() {
+                    vm.createNewUser()
+                }
             }
         }
     }

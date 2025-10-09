@@ -17,23 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ImageView">
-                                <rect key="frame" x="26" y="230.33333333333334" width="341.33333333333331" height="341.33333333333326"/>
+                                <rect key="frame" x="91.666666666666686" y="291" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AqQ-Ln-HnW"/>
+                                    <constraint firstAttribute="width" secondItem="ImageView" secondAttribute="height" multiplier="1:1" id="ipF-ys-Zus"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense Tracker AI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-zk-8NF">
-                                <rect key="frame" x="20" y="551.66666666666663" width="353" height="33.666666666666629"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                <color key="textColor" red="0.89411771299999998" green="0.52941179279999995" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SafeArea"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Po5-zk-8NF" firstAttribute="leading" secondItem="SafeArea" secondAttribute="leading" constant="20" id="JC1-Oe-jf0"/>
-                            <constraint firstItem="SafeArea" firstAttribute="trailing" secondItem="Po5-zk-8NF" secondAttribute="trailing" constant="20" id="Kfg-8f-xsM"/>
-                            <constraint firstItem="Po5-zk-8NF" firstAttribute="top" secondItem="ImageView" secondAttribute="bottom" constant="-20" id="Lqm-gF-GfA"/>
-                            <constraint firstItem="ImageView" firstAttribute="centerX" secondItem="SafeArea" secondAttribute="centerX" id="centerX"/>
-                            <constraint firstItem="ImageView" firstAttribute="centerY" secondItem="SafeArea" secondAttribute="centerY" constant="-50" id="centerY"/>
+                            <constraint firstItem="ImageView" firstAttribute="centerX" secondItem="SafeArea" secondAttribute="centerX" constant="-5" id="centerX"/>
+                            <constraint firstItem="ImageView" firstAttribute="centerY" secondItem="SafeArea" secondAttribute="centerY" constant="-60" id="centerY"/>
                             <constraint firstAttribute="height" constant="852" id="height"/>
                             <constraint firstAttribute="width" constant="393" id="width"/>
                         </constraints>
@@ -45,7 +40,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashIcon" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="splashIcon" width="326.66665649414062" height="341.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

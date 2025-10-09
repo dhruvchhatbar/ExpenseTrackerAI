@@ -29,7 +29,7 @@ struct ExpenseTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ExpensesListView()
+            LaunchScreenCoordinator()
         }
     }
 }
